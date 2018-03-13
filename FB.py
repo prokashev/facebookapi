@@ -69,11 +69,11 @@ def getvalues():
 
     i = 2
     list_of_jsons = str(tmp_string).split(', \'')
-    for jsonchik in list_of_jsons:
-        jsonchik = jsonchik.replace('\\n    ', '')
-        jsonchik = jsonchik.replace('\\n', '')
+    for json1 in list_of_jsons:
+        json1 = json1.replace('\\n    ', '')
+        json1 = json1.replace('\\n', '')
         try:
-            j = json.loads(jsonchik)
+            j = json.loads(json1)
             cn = j['campaign_name']
             sp = j['spend']
             print cn
